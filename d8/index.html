@@ -41,14 +41,6 @@ function draw(e) {
   if (direction) {
     ctx.lineWidth++
   }
-  else {
-    ctx.lineWidth--
-  }
-}
-
-canvas.addEventListener('mousemove', draw)
-canvas.addEventListener('mousedown', (e) => {
-  isDrawing = true
   lastX = e.offsetX
   lastY = e.offsetY
 })
